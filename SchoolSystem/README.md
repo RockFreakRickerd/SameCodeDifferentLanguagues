@@ -1,4 +1,4 @@
-School system:
+# School system:
 
 This code will simulate a school system.
 
