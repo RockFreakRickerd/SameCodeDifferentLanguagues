@@ -1,4 +1,4 @@
-Gearbox.
+# Gearbox.
 The gearbox will give you the gear it you in based on given speed.
 
 Some foolproof parts in code are:
