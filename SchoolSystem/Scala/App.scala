@@ -1,7 +1,6 @@
-package School
 import java.time.LocalDateTime
 
-import School._
+import Scala._
 
 object App {
   def main(args: Array[String]): Unit = {

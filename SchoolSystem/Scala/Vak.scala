@@ -1,4 +1,4 @@
-package School
+package Scala
 
 import scala.util._
 

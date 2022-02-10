@@ -1,7 +1,5 @@
-package School
-
 import scala.util._
-import School._
+import Scala._
 
 class Administratie {
   private var students = List[Student]()

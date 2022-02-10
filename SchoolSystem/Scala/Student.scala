@@ -1,4 +1,4 @@
-package School
+package Scala
 import scala.util._
 
 class Student(nummer:String, newnaam:String, newgeslacht: String, newklas:String, newstudieInrichting:String) {
