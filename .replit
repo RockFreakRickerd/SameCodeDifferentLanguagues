@@ -1,4 +1,1 @@
-# Change language to wanted language and run to wanted point.
-
-#language = "Python3"
 run = "sh run.sh"
