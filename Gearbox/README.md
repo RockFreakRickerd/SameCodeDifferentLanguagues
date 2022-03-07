@@ -6,6 +6,7 @@ Some foolproof parts in code are:
 * Integer number instead of float as speed is difficult to give in floats.
 * Warning if any of these are taken place.
 
+```mermaid
 flowchart TD
     A[Input] --> B{Speed};
     B -- >100 --> C[You're going to fast];
@@ -26,3 +27,4 @@ flowchart TD
     I ----> A[Input]
     J ----> A[Input]
     K ----> A[Input]
+```
