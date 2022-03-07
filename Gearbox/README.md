@@ -9,13 +9,14 @@ Some foolproof parts in code are:
 ```mermaid
 flowchart TD
     A[Input] --> B{Speed};
-    B --> C{>100} --> K[You're going to fast] ----> A[Input];
-    C --> D{>80} --> L[You're in 5th gear] ---> A[Input];
-    D --> E{>60} --> M[You're in 4th gear] ----> A[Input];
-    E --> F{>40} --> N[You're in 3rd gear] ----> A[Input];
-    F --> G{>10} --> O[You're in 2nd gear] ----> A[Input];
-    G --> H{>0}  --> P[You're in 1st gear] ----> A[Input];
-    H --> I{0}   --> Q[You're in neutral] ----> A[Input];
-    I --> J{<0}  --> R[You're in reverse] ----> A[Input];
-    J --> H{<-30} --> S[You're going to fast in reverse] ----> A[Input];
+    B --> C{>100} --> D{>80} --> E{>60} --> F{>40} --> G{>10} --> H{>0} --> I{0} --> J{<0} --> H{<-30}
+    C ----> K[You're going to fast] ----> A[Input];
+    D ----> L[You're in 5th gear] ---> A[Input];
+    E ----> M[You're in 4th gear] ----> A[Input];
+    F ----> N[You're in 3rd gear] ----> A[Input];
+    G ----> O[You're in 2nd gear] ----> A[Input];
+    H ----> P[You're in 1st gear] ----> A[Input];
+    I ----> Q[You're in neutral] ----> A[Input];
+    J ----> R[You're in reverse] ----> A[Input];
+    H ----> S[You're going to fast in reverse] ----> A[Input];
 ```
