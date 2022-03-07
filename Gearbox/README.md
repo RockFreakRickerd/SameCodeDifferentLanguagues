@@ -9,7 +9,7 @@ Some foolproof parts in code are:
 ```mermaid
 flowchart TD
     A[Input] --> B{Speed};
-    B --> C{>100} --> D{>80} --> E{>60} --> F{>40} --> G{>10} --> H{>0} --> I{0} --> J{<0} --> H{<-30}
+    B --> C{>100} --> D{>80} --> E{>60} --> F{>40} --> G{>10} --> H{>0} --> I{0} --> J{<0} --> K{<-30}
     C ----> K[You're going to fast] ----> A[Input];
     D ----> L[You're in 5th gear] ---> A[Input];
     E ----> M[You're in 4th gear] ----> A[Input];
@@ -18,5 +18,5 @@ flowchart TD
     H ----> P[You're in 1st gear] ----> A[Input];
     I ----> Q[You're in neutral] ----> A[Input];
     J ----> R[You're in reverse] ----> A[Input];
-    H ----> S[You're going to fast in reverse] ----> A[Input];
+    K ----> S[You're going to fast in reverse] ----> A[Input];
 ```
