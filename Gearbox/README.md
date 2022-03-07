@@ -6,6 +6,8 @@ Some foolproof parts in code are:
 * Integer number instead of float as speed is difficult to give in floats.
 * Warning if any of these are taken place.
 
+De keuzes die gemaakt wordt o.b.v input zie hieronder:
+
 ```mermaid
 flowchart TD
     A[Input] --> B{Speed};
@@ -20,3 +22,5 @@ flowchart TD
     J ----> S[You're in reverse] ----> A[Input];
     K ----> T[You're going to fast in reverse] ----> A[Input];
 ```
+
+Hiernaast is er ook een specief aantal dat gebruikt gaat worden, maar deze is niet opgenomen in flowchart.
