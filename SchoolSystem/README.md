@@ -12,7 +12,7 @@ flowchart TD
   B -- >5 --> C[yearInput == 5];
   B -- <=0 --> D[ERROR!];
   B -- <5 --> E[SetYear "yearInput"]
-  D ----> E[SetYear "yearInput"]
+  C ----> E[SetYear "yearInput"]
 ```
 
 ```mermaid
