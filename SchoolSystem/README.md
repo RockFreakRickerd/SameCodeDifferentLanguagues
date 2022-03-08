@@ -15,10 +15,10 @@ Variable:
 ```mermaid
 flowchart TD
   A[Subject Initialization] --> B[SetModuleCode] --> C{Validate year};
-  C - <0 -> D[ERROR!];
+  C -- <0 --> D[ERROR!];
   C --> E{>0}
-  E - >5 -> F[yearInput == 5];
-  E - <5 -> G[SetYear]
+  E -- >5 --> F[yearInput == 5];
+  E -- <5 --> G[SetYear]
   F --> G[SetYear]
 ```
 
