@@ -32,7 +32,8 @@ Variable:
   * Private String name;
   * Private String gender;
   * Private String class;
-  * Private String FoS;    \\FoS is Field of Study
+  * Private String FoS;  
+\\FoS is Field of Study
 
               Initialization
 ```mermaid
