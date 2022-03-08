@@ -16,5 +16,8 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  A[Student Initialization} --> B{Test};
+  A[Vak Initializing] ----> B{Validate year};
+  B -- <5 --> C[Year == inputYear];
+  B -- >5 --> D[Year == 5];
+  B -- <=0 --> E[Year == 1];
 ```
