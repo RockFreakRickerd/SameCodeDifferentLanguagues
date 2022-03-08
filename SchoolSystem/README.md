@@ -31,16 +31,18 @@ Variable:
   * Private String class;
   * Private String FoS;    \\FoS is Field of Study
 
+      initialization
 ```mermaid
 flowchart TD
-  A[Student Initialization] --> B[SetName] --> C[SetSex] --> D[SetClass] --> E[SetFos];
+  A[String Number, String Name, String sex, String Class, String FoS] --> B[SetName] --> C[SetSex] --> D[SetClass] --> E[SetFos];
 ```
-  
+      newVakken
 ```mermaid
 flowchart TD
   A[NewVakken] --> B[new Subject] --> C[add Subject];
 ```
   
+       getVak
 ```mermaid
 flowchart TD
   A[getSubject] --> B{Validate inputCode};
