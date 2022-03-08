@@ -47,7 +47,7 @@ flowchart TD
   B -- isNull --> C[return null];
   B -- !isNull --> D{i >= Subjects.size};
   D -- True --> E[return null];
-  D -- False --> F{Check subjectCode equals current subjectCode from list}
+  D -- False --> F{Check subjectCode in list}
   F -- False --> D{i >= Subjects.size}
   F -- True --> G{return subject};
 ```
