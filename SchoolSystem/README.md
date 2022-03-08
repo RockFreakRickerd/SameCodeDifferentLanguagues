@@ -7,14 +7,15 @@ Some fool proof baked in:
 * Different classes for Students, Subjects, Administration and a main.
 
                                                       SUBJECT:
-              Variable:
+Variable:
   * Private List[Double] cijfers;
   * Private String moduleCode;
   * Private Int year;
 
+              Initialization
 ```mermaid
 flowchart TD
-  A[Subject Initialization] --> B[SetModuleCode] --> C{Validate year};
+  A[String moduleCode, Int givenYear] --> B[SetModuleCode] --> C{Validate year};
   C -- <0 --> D[ERROR!];
   C --> E{>0}
   E -- >5 --> F[yearInput == 5];
@@ -23,7 +24,7 @@ flowchart TD
 ```
 
                                                      STUDENT:
-              Variable:
+Variable:
   * Private List<Subject> subjects;
   * Private String studentNumber;
   * Private String name;
