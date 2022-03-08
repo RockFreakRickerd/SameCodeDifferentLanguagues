@@ -9,8 +9,9 @@ Some fool proof baked in:
 ```mermaid
 flowchart TD
   A[Vak Initializing] ----> B[SetModuleCode] --> C{Validate year};
-  C -- <=0 --> D[ERROR!];
-  C -- >5 --> E[yearInput == 5];
-  C -- <5 --> F[SetYear]
-  E ----> F[SetYear]
+  C -- <0 --> D[ERROR!];
+  C ----> E{>0}
+  E -- >5 --> F[yearInput == 5];
+  E -- <5 --> G[SetYear]
+  F ----> G[SetYear]
 ```
