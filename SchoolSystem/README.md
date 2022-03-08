@@ -9,7 +9,7 @@ Some fool proof baked in:
 ```mermaid
 flowchart School
   A[Initializing] ----> B{Validate year};
-  B -- {<5} --> C[Year == inputYear];
-  B -- {>5} --> D[Year == 5];
-  B -- {<=0} --> E[Year == 1];
+  B -- <5 --> C[Year == inputYear];
+  B -- >5 --> D[Year == 5];
+  B -- <=0 --> E[Year == 1];
 ```
