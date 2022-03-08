@@ -50,13 +50,25 @@ flowchart TD
 flowchart TD
   A[String moduleCode] --> B{Validate inputCode};
   B -- isNull --> C[return null];
-  B -- !isNull --> D{i >= Subjects.size};
-  D -- True --> E[return null];
-  D -- False --> F{Check subjectCode in list}
+  B -- !isNull --> D{i < Subjects.size};
+  D -- False --> E[return null];
+  D -- True --> F{Check subjectCode in list}
   F -- False --> D{i >= Subjects.size}
   F -- True --> G{return subject};
 ```
-  
+
+               deviation
+```mermaid
+flowchart TD
+  A[No Specific Input] --> B[Calculate average for every subject];
+  B -- No Averages --> C[Return 0.0];
+  B -- Else --> C[Get general average of every average];
+  C --> D{i <Averages.size};
+  D -- True --> F[average i- general average];
+  F --> G[average i squared];
+  G --> D{i <Averages.size};  
+  D -- False --> E[Deviation divided by averages size];
+  E --> H[square deviation];
                                                      Administration:
 ```mermaid
 flowchart TD
