@@ -33,7 +33,27 @@ Variable:
 
 ```mermaid
 flowchart TD
-  A[Student Initialization] --> B[SetName] --> C[SetSex] --> D[SetClass] --> E[SetFos]
+  A[Student Initialization] --> B[SetName] --> C[SetSex] --> D[SetClass] --> E[SetFos];
+```
   
+```mermaid
+flowchart TD
+  A[NewVakken] --> B[new Subject] --> C[add Subject];
+```
   
+```mermaid
+flowchart TD
+  A[getSubject] --> B{Validate inputCode};
+  B -- isNull --> C[return null];
+  B -- !isNull --> D{i >= Subjects.size};
+  D -- True --> E[return null];
+  D -- False --> F{Check subjectCode equals current subjectCode from list}
+  F -- False --> D{i >= Subjects.size}
+  F -- True --> G{return subject};
+```
+  
+                                                     Administration:
+```mermaid
+flowchart TD
+
 ```
