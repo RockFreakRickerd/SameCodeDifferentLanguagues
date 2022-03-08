@@ -8,8 +8,13 @@ Some fool proof baked in:
 
 ```mermaid
 flowchart TD
-  A[Initializing] ----> B{Validate year};
+  A[Vak Initializing] ----> B{Validate year};
   B -- <5 --> C[Year == inputYear];
   B -- >5 --> D[Year == 5];
   B -- <=0 --> E[Year == 1];
+```
+
+```mermaid
+flowchart TD
+  A[Student Initialization} --> B{Test};
 ```
