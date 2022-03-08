@@ -7,7 +7,7 @@ Some fool proof baked in:
 * Different classes for Students, Subjects, Administration and a main.
 
 ```mermaid
-flowchart School
+flowchart TD
   A[Initializing] ----> B{Validate year};
   B -- <5 --> C[Year == inputYear];
   B -- >5 --> D[Year == 5];
