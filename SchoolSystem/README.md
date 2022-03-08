@@ -33,7 +33,7 @@ Variable:
 
 ```mermaid
 flowchart TD
-  A[Student Initialization] ----> B[SetName] --> C[SetSex] --> D[SetClass] --> E[SetFos]
+  A[Student Initialization] --> B[SetName] --> C[SetSex] --> D[SetClass] --> E[SetFos]
   
   
 ```
