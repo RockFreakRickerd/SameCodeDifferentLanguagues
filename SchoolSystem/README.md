@@ -6,6 +6,8 @@ Some fool proof baked in:
 * Numbers can only be assigned if subject and students are in system.
 * Different classes for Students, Subjects, Administration and a main.
 
+In the following flowcharts the custom functions are described. Getters and setters are not included as those are very standard procedures.
+
                                                       SUBJECT:
 Variable:
   * Private List[Double] cijfers;
