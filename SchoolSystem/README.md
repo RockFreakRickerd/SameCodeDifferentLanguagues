@@ -61,7 +61,7 @@ flowchart TD
 ```mermaid
 flowchart TD
   A[No Specific Input] --> B[Calculate average for every subject];
-  B -- No Averages --> C[Return 0.0];
+  B -- No Averages --> I[Return 0.0];
   B -- Else --> C[Get general average of every average];
   C --> D{i <Averages.size};
   D -- True --> F[average i- general average];
