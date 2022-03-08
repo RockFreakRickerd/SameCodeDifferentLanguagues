@@ -58,6 +58,8 @@ flowchart TD
 ```
 
                deviation
+For better working use streams when possible.
+  
 ```mermaid
 flowchart TD
   A[No Specific Input] --> B[Calculate average for every subject];
