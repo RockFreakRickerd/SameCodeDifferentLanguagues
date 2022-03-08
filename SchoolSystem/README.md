@@ -7,7 +7,7 @@ Some fool proof baked in:
 * Different classes for Students, Subjects, Administration and a main.
 
                                                       SUBJECT:
-Variable:
+              Variable:
   * Private List[Double] cijfers;
   * Private String moduleCode;
   * Private Int year;
@@ -23,7 +23,7 @@ flowchart TD
 ```
 
                                                      STUDENT:
-Variable:
+              Variable:
   * Private List<Subject> subjects;
   * Private String studentNumber;
   * Private String name;
@@ -39,13 +39,13 @@ flowchart TD
                newVakken
 ```mermaid
 flowchart TD
-  A[NewVakken] --> B[new Subject] --> C[add Subject];
+  A[String newSubject, Int givenYear] --> B[new Subject] --> C[add Subject];
 ```
   
                getVak
 ```mermaid
 flowchart TD
-  A[getSubject] --> B{Validate inputCode};
+  A[String moduleCode] --> B{Validate inputCode};
   B -- isNull --> C[return null];
   B -- !isNull --> D{i >= Subjects.size};
   D -- True --> E[return null];
