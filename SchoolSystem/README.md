@@ -69,6 +69,8 @@ flowchart TD
   G --> D{i <Averages.size};  
   D -- False --> E[Deviation divided by averages size];
   E --> H[square deviation];
+```
+  
                                                      Administration:
 ```mermaid
 flowchart TD
