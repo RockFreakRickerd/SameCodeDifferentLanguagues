@@ -38,7 +38,7 @@ loop ContainerToKade
   Containerschip->>Kraan1: return()
   Kraan1->>Kade: Plaatsen()
   Kade->>Kraan1: return()
-  Kraan2->>Containership: Afpakken()
+  Kraan2->>Containerschip: Afpakken()
   Containerschip->>Kraan2: return()
   Kraan2->>Kade: Plaatsen()
   Kade->>Kraan2: return()
