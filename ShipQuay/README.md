@@ -36,4 +36,5 @@ end
 loop ContainerToKade
   Kraan1->>Containerschip: Afpakken()
   Containerschip->>Kraan1: return()
+end
 ```
