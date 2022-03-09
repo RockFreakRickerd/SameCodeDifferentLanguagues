@@ -52,3 +52,13 @@ loop ContainerVervoer
   Kade->>Vrachtwagen3: return()
 end
 ```
+
+```mermaid
+stateDiagram-v2
+[*] -- testing --> Still
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]
+```
