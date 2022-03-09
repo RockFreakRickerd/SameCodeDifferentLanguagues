@@ -27,3 +27,10 @@ flowchart TD
   G[Vrachtwagen2] --> P;
   H[Vrachtwagen3] --> Q;
 ```
+
+```mermaid
+sequenceDiagram
+loop AddContainersToSchip
+  Container->>Containerschip: Container.add()
+end
+```
