@@ -4,7 +4,8 @@ Here will a ship quay simulated with schip, kranes and trucks. This all with mul
 
 ```mermaid
 flowchart TD
-  A[Container] --> I{I <WantedAmountOfContainers} -- False --> I{I <WantedAmountOfContainers};
-  I -- true --> J[Set on containership];
-  B[Containership] --> K[SchipBuffer]
+  A[Container] --> B{I <WantedAmountOfContainers} -- False --> B{I <WantedAmountOfContainers};
+  B -- true --> C[Set on containership];
+  D[Containership] --> E[SchipBuffer];
+  F[Kraan1] --> G[Kraan1buffer];
 ```
