@@ -12,7 +12,11 @@ flowchart TD
   M[Kraan2Buffer] -- Afpakken --> K[ShipBuffer];
   K -- return --> M[Kraan2Buffer];
   D[Kraan2] --> M;
-  E[Kade];
+  L -- Plaatsen --> N[KadeBuffer];
+  N --> L;
+  M -- Plaatsen --> N;
+  N --> M;
+  E[Kade] --> N;
   F[Vrachtwagen1];
   G[Vrachtwagen2];
   H[Vrachtwagen3];
