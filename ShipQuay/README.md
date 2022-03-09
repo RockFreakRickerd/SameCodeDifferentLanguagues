@@ -33,7 +33,7 @@ sequenceDiagram
 loop AddContainersToSchip
   Container->>Containerschip: Container.add()
 end
-loop ContainerToKade
+Container ContainerToKade
   Kraan1->>Containerschip: Afpakken()
   Containerschip->>Kraan1: return()
   Kraan1->>Kade: Plaatsen()
