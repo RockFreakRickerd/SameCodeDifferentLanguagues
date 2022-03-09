@@ -9,8 +9,9 @@ flowchart TD
   B[Containership] --> K[SchipBuffer];
   C[Kraan1] --> L[Kraan1Buffer] -- Afpakken --> K[ShipBuffer];
   K -- return --> L[Kraan1Buffer];
-  D[Kraan2] --> M[Kraan2Buffer] -- Afpakken --> K[ShipBuffer];
+  M[Kraan2Buffer] -- Afpakken --> K[ShipBuffer];
   K -- return --> M[Kraan2Buffer];
+  D[Kraan2] --> M;
   E[Kade];
   F[Vrachtwagen1];
   G[Vrachtwagen2];
