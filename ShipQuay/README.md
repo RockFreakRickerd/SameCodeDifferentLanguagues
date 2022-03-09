@@ -13,11 +13,17 @@ flowchart TD
   K -- return --> M[Kraan2Buffer];
   D[Kraan2] --> M;
   L -- Plaatsen --> N[KadeBuffer];
-  N --> L;
+  N -- return --> L;
   M -- Plaatsen --> N;
-  N --> M;
+  N -- return --> M;
   E[Kade] --> N;
-  F[Vrachtwagen1];
-  G[Vrachtwagen2];
-  H[Vrachtwagen3];
+  E -- Wegbrengen --> O[Vrachtwagen1Buffer];
+  O -- return --> E;
+  E -- Wegbrengen --> P[Vrachtwagen2Buffer];
+  P -- return --> E;
+  E -- Wegbrengen --> Q[Vrachtwagen3Buffer];
+  Q -- return --> E;
+  F[Vrachtwagen1] --> O;
+  G[Vrachtwagen2] --> P;
+  H[Vrachtwagen3] --> Q;
 ```
