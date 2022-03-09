@@ -43,4 +43,12 @@ loop ContainerToKade
   Kraan2->>Kade: Plaatsen()
   Kade->>Kraan2: return()
 end
+loop ContainerVervoer
+  Vrachtwagen1->>Kade: Wegbrengen()
+  Kade->>Vrachtwagen1: return()
+  Vrachtwagen2->>Kade: Wegbrengen()
+  Kade->>Vrachtwagen2: return()
+  Vrachtwagen3->>Kade: Wegbrengen()
+  Kade->>Vrachtwagen3: return()
+end
 ```
