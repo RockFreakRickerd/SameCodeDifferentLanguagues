@@ -55,10 +55,10 @@ end
 
 ```mermaid
 stateDiagram-v2
-[*] -- testing --> Still
+[*] --> Still
 Still --> [*]
 Still --> Moving
-Moving --> Still
+Moving -- 1 --> Still
 Moving --> Crash
 Crash --> [*]
 ```
