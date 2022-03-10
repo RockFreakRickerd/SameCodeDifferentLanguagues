@@ -34,9 +34,32 @@ Student: String class
 Student: Study
 Student: Student(String number, String name, String sex, String study)
 Student: newVakken(String name)
+Student: Getters()
+Student: Setters()
 Administration: List students
 Administration: Administration()
 Administration: addStudents(Student student)
+Administration: averages(Student student, Subject subject)
+Administration: variantion(Subject subject)
+Administration: allGrades(Student student)
+Administration: printSubjects(Student student)
+Administration: deviation(Student student)
+Administration: succeed(Student student)
+Administration: succeed(Subject subject)
+Administration: failed(Student student)
+Administration: failed(Subject subject)
+Administration: printStudents(Subject subject)
+Administration: newGrade(Student student, Subject subject, Double grade)
+Administration: getGrade(Student student, Subject subject)
+Administration: printGrades(Student student, Subject subject)
+Administration: newVakken(Student student, List<Subject> subjects)
+Subject: Map<String, List<Double>> grades
+Subject: List<Student> students
+Subject: String moduleCode
+Subject: Int Year
+Subject: Subject(String module, Int yearGiven)
+Subject: Getters()
+Subject: Setters()
 ```
 
 In the following flowcharts the custom functions are described. Getters and setters are not included as those are very standard procedures.
