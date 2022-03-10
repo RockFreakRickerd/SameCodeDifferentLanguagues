@@ -16,8 +16,8 @@ App --> Subject
 Administration --> Student: Uses
 Administration --> Subject: Uses
 App: Administration adminstration
-App: List<Subject> CMI
-App: List<Subject> HBO
+App: List CMI
+App: List HBO
 App: Subject Math
 App: Subject English
 App: Subject Programming
@@ -26,6 +26,17 @@ App: Subject Networking
 App: Student Rick
 App: Student Dieter
 App: Student You
+Student: List subjects
+Student: String studentNummer
+Student: String name
+Student: String sex
+Student: String class
+Student: Study
+Student: Student(String number, String name, String sex, String study)
+Student: newVakken(String name)
+Administration: List students
+Administration: Administration()
+Administration: addStudents(Student student)
 ```
 
 In the following flowcharts the custom functions are described. Getters and setters are not included as those are very standard procedures.
