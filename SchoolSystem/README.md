@@ -9,10 +9,23 @@ Some fool proof baked in:
 Class diagram of the schoolsystem is as following:
 
 ```mermaid
-classdiagram
+classDiagram
 App --> Student
 App --> Administration
 App --> Subject
+Administration --> Student: Uses
+Administration --> Subject: Uses
+App: Administration adminstration
+App: List<Subject> CMI
+App: List<Subject> HBO
+App: Subject Math
+App: Subject English
+App: Subject Programming
+App: Subject Databases
+App: Subject Networking
+App: Student Rick
+App: Student Dieter
+App: Student You
 ```
 
 In the following flowcharts the custom functions are described. Getters and setters are not included as those are very standard procedures.
