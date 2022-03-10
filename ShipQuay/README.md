@@ -52,3 +52,8 @@ loop ContainerVervoer
   Kade->>Vrachtwagen3: return()
 end
 ```
+
+```mermaid
+classDiagram
+  App --> Test
+```
