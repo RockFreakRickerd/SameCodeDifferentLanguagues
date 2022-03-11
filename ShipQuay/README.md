@@ -8,6 +8,9 @@ loop AddContainersToSchip
   Container->>Containerschip: Container.add()
 end
 loop ContainerToKade
+  loop
+    Kraan1->>Kraan1: wait()
+  end
   Kraan1->>Containerschip: Afpakken()
   Containerschip->>Kraan1: return()
   Kraan1->>Kade: Plaatsen()
