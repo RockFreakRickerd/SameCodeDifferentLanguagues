@@ -48,5 +48,4 @@ classDiagram
   App -- creates --> Kraan
   App -- creates --> Kade
   App -- creates --> Container
-  Container : <<Abstract>>
 ```
