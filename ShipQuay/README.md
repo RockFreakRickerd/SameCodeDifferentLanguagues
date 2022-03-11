@@ -49,4 +49,11 @@ classDiagram
   App --> Kraan : creates
   App --> Kade : creates
   App --> Container : creates
+  App --> Vrachtwagens: creates
+  Vrachtwagens --> Kade : Uses
+  Kraan --> Containerschip : Uses
+  Kraan --> Kade : Uses
+  HeatedContainer --> Container : Extends
+  NormalContainer --> Container : Extends
+  CooledContainer --> Container : Extends
 ```
