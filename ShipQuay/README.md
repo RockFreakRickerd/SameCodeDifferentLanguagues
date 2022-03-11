@@ -24,21 +24,21 @@ loop ContainerToKade
   Kade->>Kraan2: return()
 end
 loop ContainerVervoer
-  Vrachtwagen1->>Kade: Wegbrengen()
+  Truck1->>Kade: Wegbrengen()
   loop kadeIsEmpty
-    Vrachtwagen1->>Vrachtwagen1: wait(time)
+    Truck1->>Truck1: wait(time)
   end
-  Kade->>Vrachtwagen1: return()
-  Vrachtwagen2->>Kade: Wegbrengen()
+  Kade->>Truck1: return()
+  Truck2->>Kade: Wegbrengen()
   loop kadeIsEmpty
-    Vrachtwagen2->>Vrachtwagen2: wait(time)
+    Truck2->>Truck2: wait(time)
   end
-  Kade->>Vrachtwagen2: return()
-  Vrachtwagen3->>Kade: Wegbrengen()
+  Kade->>Truck2: return()
+  Truck3->>Kade: Wegbrengen()
   loop kadeIsEmpty
-    Vrachtwagen3->>Vrachtwagen3: wait(time)
+    Truck3->>Truck3: wait(time)
   end
-  Kade->>Vrachtwagen3: return()
+  Kade->>Truck3: return()
 end
 ```
 
@@ -49,8 +49,8 @@ classDiagram
   App --> Kraan : creates
   App --> Kade : creates
   App --> Container : creates
-  App --> Vrachtwagens: creates
-  Vrachtwagens --> Kade : Uses
+  App --> Truck: creates
+  Truck --> Kade : Uses
   Kraan --> Containerschip : Uses
   Kraan --> Kade : Uses
   Container <|-- HeatedContainer : Extends
@@ -58,9 +58,9 @@ classDiagram
   Container <|-- CooledContainer : Extends
   App: Kade kade
   App: Container container
-  App: Vrachtwagen man
-  App: Vrachtwagen mercedes
-  App: Vrachtwagen volvo
+  App: Truck man
+  App: Truck mercedes
+  App: Truck volvo
   App: Containerschip ship
   App: Kraan kraan1
   App: Kraan kraan2
@@ -88,5 +88,25 @@ classDiagram
   Kade: print()
   Kade: getSize()
   Kade: checkSpace()
-  Kade: KadeIsLeeg(); Boolean
+  Kade: KadeIsLeeg()
+  Container: Int count
+  Container: Int trackingNumber
+  Container: String name
+  Container: Container(String naam)
+  Container: getTrackingNumber
+  Container: print(Int trackingNumber)
+  HeatedContainer: HeatedContainer()
+  HeatedContainer: Print(Int trackingNumber)
+  NormalContainer: NormalContainer()
+  NormalContainer: Print(Int trackingNumber)
+  CooledContainer: CooledContainer()
+  CooledContainer: Print(Int trackingNumber)
+  Truck: Kade kade
+  Truck: Random random
+  Truck: String name
+  Truck: Int time
+  Truck: Int max
+  Truck: Int min
+  Truck: Truck(String name, Kade k)
+  Truck: run()
 ```
