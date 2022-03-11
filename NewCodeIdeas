@@ -11,3 +11,75 @@ Classes: (Possible classes)
 Interesting: (OOP, Multi-threading, etc.)
 
 That last part can determine which languages may not be possible.
+
+Already in repo:
+Name: 
+  Gearbox
+Description: 
+  The program should determine the gear you are in with the user input. 
+  The program should stop after 10 inputs or q.
+  The program should determine the average speed of the user input at the end (without storing the out of boundaries input).
+  The program should only accept speed between -30 and 100.
+  The program should let the user know if he/she/they go over this limit.
+  The program could let the user know what the boundaries are.
+Classes: 
+  Only main class is needed here.
+Interesting:
+  I/O
+  
+Name:
+  Schoolsystem
+Description:
+  The program should be possible to initiate multiple students.
+  The program should be possible to initiate multiple subjects.
+  The program should be able to have multiple subjects assigned to a student.
+  The program should be able to have multiple students follow one subject.
+  The program should be able to set grades for a student at a subject.
+  The program should keep track of the results of students at a subject.
+  The program should keep a grade for a student only for this student.
+  The program should be able to calculate the deviation of ... .
+  The program should be able to calculate the average grades of a student and show this.
+  The program should be able to calculate the average grades in a subject and show this.
+  The program should be able to determine if a subject is passed by a student.
+  The program should be able to determine if a subject is failed by a student.
+  The program should be able to determine if boys or girls did a certain subject better (grade wise).
+  The program should be able to calculate the ... of .. .
+Classes:
+  * App
+  * Administration 
+  * Student
+  * Subject
+Interesting:
+  * Grades for a subject are student and subject specific.
+  * There should be checked on the average grade of subject if student has passed the subject. (Let's use 5.5)
+  * There should be check if the student is a boy or a girl to determine who has done better in a certain subject.
+  
+Name:
+  Ships quay
+Description:
+  * The program should run with multi-threading.
+  * The program shall have 3 trucks and 2 cranes minimum (can be changed to fully test it).
+  * The program shall when started create 100 containers of randomly chosen (Heated, normal or cooled)
+  * The program should be possible to have all the containers safely moved to destination (outside with truck).
+  * The program should check if there is room for container on the quay.
+  * The program should check if there are still containers left on the ship.
+  * The program should have a random delay when carring off the containers to simulate the time it takes for the trucks to be back.
+  * The delay shall lay between 1 and 5 seconds.
+Classes:
+  * App (Main)
+  * Containership
+  * Crane
+  * Quay
+  * Truck
+  * Container <<Abstract>>
+  * HeatedContainer
+  * NormalContainer
+  * CooledContainer
+Interesting:
+  OOP, Multi-threading, Abstract
+
+NEW
+Name:
+Description:
+Classes:
+Interesting:
