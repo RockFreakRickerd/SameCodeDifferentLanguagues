@@ -42,6 +42,7 @@ loop ContainerVervoer
 end
 ```
 
+Flowchart of the program:
 ```mermaid
 classDiagram
   App --> Containerschip : creates
