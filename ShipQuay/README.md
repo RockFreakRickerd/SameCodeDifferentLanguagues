@@ -53,17 +53,7 @@ classDiagram
   Vrachtwagens --> Kade : Uses
   Kraan --> Containerschip : Uses
   Kraan --> Kade : Uses
-  HeatedContainer --> Container : Extends
-  NormalContainer --> Container : Extends
-  CooledContainer --> Container : Extends
-  Class App{
-    Kade kade
-    Containers container
-    Vrachtwagen man
-    Vrachtwagen mercedes
-    Vrachtwagen volvo
-    Containership schip
-    Kraan kraan1
-    Kraan kraan2
-  }
+  Container <|-- HeatedContainer : Extends
+  Container <|-- NormalContainer : Extends
+  Container <|-- CooledContainer : Extends
 ```
