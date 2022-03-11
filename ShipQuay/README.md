@@ -56,4 +56,12 @@ classDiagram
   Container <|-- HeatedContainer : Extends
   Container <|-- NormalContainer : Extends
   Container <|-- CooledContainer : Extends
+  App: Kade kade
+  App: Container container
+  App: Vrachtwagen man
+  App: Vrachtwagen mercedes
+  App: Vrachtwagen volvo
+  App: Containerschip ship
+  App: Kraan kraan1
+  App: Kraan kraan2
 ```
