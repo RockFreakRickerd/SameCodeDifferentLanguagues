@@ -80,6 +80,25 @@ Interesting:
 
 NEW
 Name:
+  Gearbox V2
 Description:
+  Gearbox with changes.
+  At the start of the program the user can choose between different gearboxes.
+  The program should have standard 3 gearboxes.
+  The program could have more gearboxes and/or custom gearboxes.
+  The gearboxes could ideally impact maximum speed.
+  The program could calculate the average.
+  The program could calculate with the custom gearbox the speed per gear.
 Classes:
+  * App
+  * Gearbox
+Interesting:
+  Calculating with different gearboxes and maybe custom.
+  
+Name:
+
+Description:
+
+Classes:
+
 Interesting:
