@@ -64,4 +64,29 @@ classDiagram
   App: Containerschip ship
   App: Kraan kraan1
   App: Kraan kraan2
+  Containerschip: List containers
+  Containerschip: Container container
+  Containerschip: Containerschip()
+  Containerschip: getSize()
+  Containerschip: print()
+  Containerschip: Afpakken()
+  Containerschip: schipIsEmpty()
+  Kraan: String naam
+  Kraan: Random random
+  Kraan: Containerschip ship
+  Kraan: Kade kade
+  Kraan: Int time
+  Kraan: Int max
+  Kraan: Int min
+  Kraan: Kraan(String naam, Kade k, Containerschip S)
+  Kraan: Run()
+  Kade: LinkedList opslag
+  Kade: Int capacity
+  Kade: Containerschip ship
+  Kade: Plaatsen()
+  Kade: wegbrengen()
+  Kade: print()
+  Kade: getSize()
+  Kade: checkSpace()
+  Kade: KadeIsLeeg(), Boolean
 ```
