@@ -88,5 +88,5 @@ classDiagram
   Kade: print()
   Kade: getSize()
   Kade: checkSpace()
-  Kade: KadeIsLeeg(): Boolean
+  Kade: KadeIsLeeg(); Boolean
 ```
