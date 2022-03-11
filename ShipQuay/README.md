@@ -15,6 +15,9 @@ loop ContainerToKade
   Containerschip->>Kraan1: return()
   Kraan1->>Kade: Plaatsen()
   Kade->>Kraan1: return()
+  loop
+    Kraan2->>Kraan2: wait()
+  end
   Kraan2->>Containerschip: Afpakken()
   Containerschip->>Kraan2: return()
   Kraan2->>Kade: Plaatsen()
