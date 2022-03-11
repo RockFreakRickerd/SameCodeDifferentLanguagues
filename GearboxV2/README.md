@@ -50,6 +50,7 @@ classDiagram
  CustomTransmission: Int numberOfGears
  CustomTransmission: String type
  CustomTransmission: List ratios
+ Gearbox: <<Abstract>>
 ```
 
 The flowdiagram is:
