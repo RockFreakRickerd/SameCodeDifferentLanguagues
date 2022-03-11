@@ -44,8 +44,8 @@ end
 
 ```mermaid
 classDiagram
-  App -- creates --> Containerschip
-  App -- creates --> Kraan
-  App -- creates --> Kade
-  App -- creates --> Container
+  App --> Containerschip : creates
+  App --> Kraan : creates
+  App --> Kade : creates
+  App --> Container : creates
 ```
