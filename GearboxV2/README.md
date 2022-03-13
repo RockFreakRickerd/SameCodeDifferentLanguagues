@@ -30,6 +30,10 @@ classDiagram
  Gearbox: Int numberOfGears
  Gearbox: String type
  Gearbox: List ratios
+ Gearbox: Getter()
+ Gearbox: Setter()
+ Gearbox: ChangeRatios()
+ Gearbox: ChangeNumberOfGears()
 ```
 
 The flowdiagram is:
