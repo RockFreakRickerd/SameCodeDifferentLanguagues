@@ -44,7 +44,8 @@ public class App {
       ratiosS.add(0.942);
       ratiosS.add(0.763);
       Gearbox Sport = new Gearbox("Honda transmission", "Sport", 6, ratiosS, 8500.0, 2.7, 20.0);
-      
+
+      // Debugging code.
       /*Sport.PrintInfo();
       System.out.println("");
       Muscle.PrintInfo();
@@ -98,13 +99,37 @@ public class App {
       System.out.println("No numeric value is given.");
     }
 
-  System.out.println(" ");
-  Gearbox chose = choices.get(wantedPlace);
-  chose.PrintInfo();
-  System.out.println(" ");
+    System.out.println(" ");
+    Gearbox chose =   choices.get(wantedPlace);
+  //  chose.PrintInfo();
+ //   System.out.println(" ");
+
+  //Using the chosen gearbox
+    Long maximumSpeed = chose.getMaximumSpeed();
+    System.out.println("Now we can see which gear we are in with input speed.");
+    System.out.println("The maximum speed with this gearbox is "+Long.toString(maximumSpeed)+" Km/H.");
+  
+
+
+    // Not finished needs working!
+    int numberOfInputs = 0;
+    int maximumNumberOfInputs = 10;
+    List<Long> maximumSpeeds = chose.getSpeeds();
+    for(int i = 0; i<= maximumNumberOfInputs; i++)   {
+      try{
+        Integer speed = sc.nextInt();
+        System.out.println("Trying");
+        for(int j = maximumSpeeds.size(); j >= 0; j--){
+          System.out.println("Gear "+Integer.toString(j)+" with a maximum speed of "+Long.toString(maximumSpeeds.get(j)));
+        }
+      }catch(Exception E){
+        String input = sc.nextLine();
+        System.out.println("ERROR!");
+        if(input == "q" || input == "Q"){
+          break;
+        }
+      }
+      numberOfInputs += 1;
+    }
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/main
