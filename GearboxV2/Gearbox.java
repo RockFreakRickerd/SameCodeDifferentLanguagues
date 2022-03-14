@@ -76,4 +76,8 @@ public class Gearbox{
       System.out.println(Integer.toString(i+1)+": "+Double.toString(ratios.get(i))+" "+Long.toString(maxSpeeds.get(i))+" km/h.");
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main
