@@ -73,7 +73,6 @@ public class Gearbox{
   public List<Long> getSpeeds(){
     return this.maxSpeeds;
   }
-  
   public void PrintInfo(){
     System.out.println("Gearbox `"+name+"` information.");
     System.out.println("Current gearbox type: "+type);
@@ -83,5 +82,4 @@ public class Gearbox{
       System.out.println(Integer.toString(i+1)+": "+Double.toString(ratios.get(i))+" "+Long.toString(maxSpeeds.get(i))+" km/h.");
     }
   }
-  
 }

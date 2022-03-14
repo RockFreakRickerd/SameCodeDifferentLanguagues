@@ -46,6 +46,7 @@ public class App {
       Gearbox Sport = new Gearbox("Honda transmission", "Sport", 6, ratiosS, 8500.0, 2.7, 20.0);
 
       // Debugging code.
+      
       /*Sport.PrintInfo();
       System.out.println("");
       Muscle.PrintInfo();
@@ -98,7 +99,6 @@ public class App {
     }catch(Exception E){
       System.out.println("No numeric value is given.");
     }
-
     System.out.println(" ");
     Gearbox chose =   choices.get(wantedPlace);
   //  chose.PrintInfo();
@@ -131,5 +131,9 @@ public class App {
       }
       numberOfInputs += 1;
     }
+  System.out.println(" ");
+  Gearbox chosen = choices.get(wantedPlace);
+  chosen.PrintInfo();
+  System.out.println(" ");
   }
 }
