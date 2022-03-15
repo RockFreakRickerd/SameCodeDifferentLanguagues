@@ -81,9 +81,9 @@ public class App {
     System.out.println(" ");
     System.out.println("Choose which gearbox you want to use: type number or type!");
     Scanner sc = new Scanner(System.in);
-    int wanted = sc.nextInt();
+    //int wanted = sc.nextInt();
     try{
-      Integer.toString(wanted);
+      int wanted = sc.nextInt();
       if(wanted <= 0){
         System.out.println(" ");
         System.out.println("These are not options chose between 1 and "+choices.size()+" next time.");
@@ -114,13 +114,33 @@ public class App {
     // Not finished needs working!
     int numberOfInputs = 0;
     int maximumNumberOfInputs = 10;
+    int speed;
+    String input;
     List<Long> maximumSpeeds = chose.getSpeeds();
+    int speeds = 0;
     for(int i = 0; i<= maximumNumberOfInputs; i++)   {
-      try{
+      if(sc.hasNextInt()){
+        speed = sc.nextInt();
+        System.out.println("It's a number");
+        System.out.println("Input: "+speed);
+        speeds += speed;
+        numberOfInputs += 1;
+        for(int j = maximumSpeeds.size(); j > 0;){
+          System.out.println("Gear "+Integer.toString(j--)+" with a maximum speed of "+Long.toString(maximumSpeeds.get(j)));
+        }
+      }else{
+        input = sc.nextLine();
+        if(input.equalsIgnoreCase("q")){
+          System.out.println("It's a Q.");
+        }
+        i--;
+      }
+      /*try{
         Integer speed = sc.nextInt();
         System.out.println("Trying");
         for(int j = maximumSpeeds.size(); j >= 0; j--){
           System.out.println("Gear "+Integer.toString(j)+" with a maximum speed of "+Long.toString(maximumSpeeds.get(j)));
+        System.out.println("Output.");
         }
       }catch(Exception E){
         String input = sc.nextLine();
@@ -128,9 +148,11 @@ public class App {
         if(input == "q" || input == "Q"){
           break;
         }
-      }
-      numberOfInputs += 1;
+      }*/
     }
+
+  System.out.println(speeds);
+  System.out.println(speeds/numberOfInputs);
   System.out.println(" ");
   Gearbox chosen = choices.get(wantedPlace);
   chosen.PrintInfo();
